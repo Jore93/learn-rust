@@ -18,4 +18,4 @@ This will add your current directory, as a volume, to the container, set the wor
 Source for the [above instructions](https://hub.docker.com/_/rust/).
 
 ## 00_hello_world
-Simple `Hello World!` example in Rust.
+Simple `Hello World!` example in Rust. Build Docker container `docker build -t hello-world-rust .` and run the container `docker run -it --rm --name hello-world-rust-app hello-world-rust`.
