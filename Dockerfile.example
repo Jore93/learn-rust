@@ -1,0 +1,10 @@
+# Creates container for application. Change <app_name>
+# to name of the folder where the Dockerfile is located at
+FROM rust:latest
+
+WORKDIR /usr/src/<app_name>
+COPY . .
+
+RUN cargo install --path .
+
+CMD ["<app_name>"]
