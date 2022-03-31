@@ -1,8 +1,8 @@
 FROM rust
 
-WORKDIR /usr/src/hello-world
+WORKDIR /usr/src/app
 COPY . .
 
 RUN cargo install --path .
 
-CMD ["hello-world"]
+CMD ["variables"]

@@ -1,8 +1,8 @@
 # Creates container for application. Change <app_name>
-# to name of the folder where the Dockerfile is located at
-FROM rust:latest
+# to name of the application in Cargo.toml file
+FROM rust
 
-WORKDIR /usr/src/<app_name>
+WORKDIR /usr/src/app
 COPY . .
 
 RUN cargo install --path .
